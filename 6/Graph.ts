@@ -7,6 +7,7 @@ export class Graph {
 	incidenceList: number[][];
 	verticesTotal: number;
 	dijkstraDistance: number[];
+	center: number;
 
 	constructor(verticesTotal?: number) {
 		this.verticesTotal = verticesTotal || 1;
@@ -139,8 +140,14 @@ export class Graph {
 			}
 		}
 
+		const exc: number[] = dist.map((item: number[]) => Math.max(...item));
+		this.center = Math.min(...exc);
+
 		// print matrix
 		console.table(dist);
+
+		console.log('Electricity ->', exc);
+		console.log('Center ->', this.center);
 	}
 
 	print() {
