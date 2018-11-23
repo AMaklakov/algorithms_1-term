@@ -146,7 +146,7 @@ export class Graph {
 		// print matrix
 		console.table(dist);
 
-		console.log('Electricity ->', exc);
+		console.log(' Eccentricity ->', exc);
 		console.log('Center ->', this.center);
 	}
 
