@@ -1,9 +1,21 @@
 {
+    "name": "6-lab",
+    "version": "1.0.0",
+    "description": "I wrote it in TS because I know TS much better than Python",
+    "main": "main.ts",
     "scripts": {
-        "start": "ts-node 3-task.ts"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "ts-node main.ts"
     },
+    "author": "A.Maklakov",
+    "license": "ISC",
     "devDependencies": {
         "ts-node": "^7.0.1",
         "typescript": "^3.1.6"
+    },
+    "dependencies": {
+        "@types/node": "^10.12.9",
+        "clear": "^0.1.0",
+        "console.table": "^0.10.0"
     }
 }
